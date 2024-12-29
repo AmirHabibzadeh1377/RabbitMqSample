@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a.habibzadeh\\source\\repos\\RabbitSample\\RabbitSample\\RabbitSample.csproj": {}
+    "C:\\Users\\Reza\\Desktop\\Documents\\RabbitMqSample\\RabbitSample\\RabbitSample.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a.habibzadeh\\source\\repos\\RabbitSample\\RabbitSample\\RabbitSample.csproj": {
+    "C:\\Users\\Reza\\Desktop\\Documents\\RabbitMqSample\\RabbitSample\\RabbitSample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a.habibzadeh\\source\\repos\\RabbitSample\\RabbitSample\\RabbitSample.csproj",
+        "projectUniqueName": "C:\\Users\\Reza\\Desktop\\Documents\\RabbitMqSample\\RabbitSample\\RabbitSample.csproj",
         "projectName": "RabbitSample",
-        "projectPath": "C:\\Users\\a.habibzadeh\\source\\repos\\RabbitSample\\RabbitSample\\RabbitSample.csproj",
-        "packagesPath": "C:\\Users\\a.habibzadeh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a.habibzadeh\\source\\repos\\RabbitSample\\RabbitSample\\obj\\",
+        "projectPath": "C:\\Users\\Reza\\Desktop\\Documents\\RabbitMqSample\\RabbitSample\\RabbitSample.csproj",
+        "packagesPath": "C:\\Users\\Reza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Reza\\Desktop\\Documents\\RabbitMqSample\\RabbitSample\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\a.habibzadeh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "http://31.7.71.155:5700/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,13 +42,18 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "RabbitMQ.Client": {
               "target": "Package",
               "version": "[7.0.0, )"
@@ -70,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

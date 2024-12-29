@@ -1,8 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-
-using RabbitSample.Models;
-
-using System.Diagnostics;
+using RabbitSample.Service;
 
 namespace RabbitSample.Controllers
 {
@@ -10,25 +7,21 @@ namespace RabbitSample.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        [HttpGet]
+        public IActionResult SendMessage(string messages)
         {
-            _logger = logger;
+            var rabbitService = new OrderPushEngineServices();
+            var result = rabbitService.PushMessage(messages);
+            rabbitService.Dispose();
+            return Ok(messages);
         }
 
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Ack()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var consumer = new CosumerServices();
+            consumer.Consumed();
+            return Ok();
         }
     }
 }
