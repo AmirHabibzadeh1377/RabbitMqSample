@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "eK1c0zIRu4o=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\a.habibzadeh\\source\\repos\\RabbitSample\\RabbitSample\\RabbitSample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\a.habibzadeh\\.nuget\\packages\\rabbitmq.client\\7.0.0\\rabbitmq.client.7.0.0.nupkg.sha512",
+    "C:\\Users\\a.habibzadeh\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "C:\\Users\\a.habibzadeh\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://31.7.71.155:5700/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}
